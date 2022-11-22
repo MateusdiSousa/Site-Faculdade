@@ -1,0 +1,36 @@
+{% extends 'base.html'%}
+{% block conteudo %}
+<body background="../static/imagens/fundo2.png">
+        <header>
+            <nav id="menu">
+                <img id="logo" src="../static/imagens/logo.png" alt="">
+                <ul class="nav-list">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/quemsomos">Quem somos</a></li>
+                    <li><a href="/contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+            <div class="container">
+                <div>
+                    <h1>Entre em contato</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eveniet natus quam perferendis, sunt ratione accusamus adipisci neque eos velit quo culpa magnam veritatis dicta doloribus dolor maxime non dolorum?</p>
+                </div>
+                <hr>
+                <div id="forms">
+                    <form method="post" action="/usuarios">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome">
+                        <label for="email">Seu email:</label>
+                        <input type="email" id="inputnome" name="email">
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" name="assunto" id="assunto">
+                        <label for="textareadescrição">Descrição:</label>
+                        <textarea name="descrição" id="descrição" ></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+</body>
+</html>
+{% endblock conteudo %}
